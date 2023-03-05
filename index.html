@@ -1,0 +1,299 @@
+<!-- Host with GitHub pages -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Brophy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("h2iZHahdIgnrVID-3");
+   })();
+</script>
+</head>
+
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/logo.svg" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+                    nav__link--anchor 
+                    link__hover-effect 
+                    link__hover-effect--black
+                    ">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class="
+                    nav__link--anchor 
+                    link__hover-effect 
+                    link__hover-effect--black
+                    ">Projects</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+                    nav__link--anchor 
+                    link__hover-effect 
+                    link__hover-effect--black
+                    ">Contact</a>
+                </li>
+                <li class="nav__link click">
+                    <a href="#" class="
+                    nav__link--anchor 
+                    link__hover-effect 
+                    link__hover-effect--black
+                    "><i class="fas fa-adjust" onclick="toggleContrast()"></i></a>
+                </li>
+            </ul>
+        </nav>
+
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title orange">I'm Liam!</h1>
+                <p class="header__para">I'm a <b class="orange">Developing Software Engineer</b> with a strong passion for
+                    building web
+                    applications with great user experiences.
+                    <br>
+                    Here's a bit more <b class="orange click" onclick="toggleModal()">about me.</b>
+                </p>
+                <div class="social__list">
+                    <a href="https://linkedin.com" target="_blank" class="social__link click">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/liambrophy" target="_blank" class="social__link click">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="./assets/LiamBrophy_CV_2022_PDF.pdf" target="_blank" class="social__link click">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <a href="#">
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Software Engineer</h4>
+                <p class="modal__para">I'm a 22 year-old Irish, self-taught<b class="orange"> software engineer</b>
+                    with a strong passion for
+                    developing
+                    websites with great <b class="orange">user experiences.</b>
+                    <br>
+                    I currently work on challenging projects and problems that will push me to develop my skills
+                     as a software engineer. I have a strong <b class="orange">passion</b> and <b class="orange">desire</b> 
+                     to continue to learn and keep developing my knowledge. I would love an opportunity to prove that I bring
+                     valuable knowledge and skills to the right engineering team.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                            alt="">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="data:image/png;base64,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"
+                            alt="">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+                            alt="">
+                        <span class="language__name">Python</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"
+                            alt="">
+                        <span class="language__name">C++</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img class="modal__language--img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="">
+                        <span class="language__name">React</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+                <h3 class="modal__title modal__title--contact">Let's have a chat</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities</h4>
+                <form id="contact__form" onsubmit="contact(event)">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send it my way</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Look forward to speaking to you soon.
+                </div>
+            </div>
+        </div>
+        <img src="./assets/semi circle.svg" class="shape shape-0">
+        <img src="./assets/circle.svg" class="shape shape-1">
+        <img src="./assets/squiggly.svg" class="shape shape-2">
+        <img src="./assets/circle.svg" class="shape shape-3">
+        <img src="./assets/triangle.svg" class="shape shape-4">
+        <img src="./assets/circle.svg" class="shape shape-5">
+        <img src="./assets/squiggly.svg" class="shape shape-6">
+        <img src="./assets/circle.svg" class="shape shape-7">
+        <img src="./assets/semi circle.svg" class="shape shape-8">
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Here are some of my <span class="orange">projects</span></h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/movie-search-ss.png" alt="" class="project__img">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">MovieSearch Project</h3>
+                                <h4 class="project__description--sub-title">HTML, CSS, JavaScript, React</h4>
+                                <p class="project__description--para">Website that allows users to search for thousands of movies by their title.
+                                    The user can then click on each movie displayed for further information on that movie. All search and movie
+                                    data is pulled from a real world API. Built using React, JavaScript, HTML and CSS best practices.
+                                </p>
+                                <div class="project__Description--links">
+                                    <a href="https://github.com/liambrophy" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://movie-search-project-v2-liambrophy.vercel.app/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/library-ss.png" alt="" class="project__img">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">Library E-Commerce Project</h3>
+                                <h4 class="project__description--sub-title">HTML, CSS JavaScript, React</h4>
+                                <p class="project__description--para">An e-commerce website where users can shop for a range of books.
+                                    The data is pulled from a mock API to simulate a real world e-commerce website. Books can be sorted by 
+                                    price and rating. Implemented a checkout feature that allows users to view the items in their basket 
+                                    as well as the total price. Built using React, JavaScript, CSS and HTML best practices.
+                                </p>
+                                <div class="project__Description--links">
+                                    <a href="https://github.com/liambrophy" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://react-library-ecommerce-liambrophy.vercel.app/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/netflix-clone-ss.png" alt="" class="project__img">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">Netflix Clone Project</h3>
+                                <h4 class="project__description--sub-title">HTML, CSS JavaScript, React, TypeScript</h4>
+                                <p class="project__description--para">A complete clone of Netflix. Sign-in and sign-up functionality
+                                    added by using Firebase. Users can add movies or shows to 'My List' which is kept track of by Firebase.
+                                    Subscription functionality implemented using Stripe. Users can select from multiple plans, and also cancel
+                                    or change these plans at any time. Made use of multiple custom hooks. Tailwind CSS was used for improved styling.
+                                    All data is pulled from a real world API to ensure movies and shows are kept up to date.
+                                </p>
+                                <div class="project__Description--links">
+                                    <a href="https://github.com/liambrophy" target="_blank" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://netflix-clone-liambrophy.vercel.app/" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img class="footer__logo--img" src="./assets/logo.svg" alt="">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="https://github.com/liambrophy" target="_blank" class="
+                        footer__social--link
+                        link__hover-effect
+                        link__hover-effect--white">
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="
+                        footer__social--link
+                        link__hover-effect
+                        link__hover-effect--white">
+                        Linkedin
+                    </a>
+                    <a href="#" onclick="toggleModal()" class="
+                        footer__social--link
+                        link__hover-effect
+                        link__hover-effect--white">
+                        Contact
+                    </a>
+                    <a href="./assets/LiamBrophy_CV_2022_PDF.pdf" target="_blank" class="
+                        footer__social--link
+                        link__hover-effect
+                        link__hover-effect--white">
+                        Resume
+                    </a>
+                </div>
+                <div class="footer__copyright">Made by Liam Brophy</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
